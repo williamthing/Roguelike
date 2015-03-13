@@ -18,4 +18,6 @@ Copyright 2012 Sol from www.solarianprogrammer.com
 Modified by Brandon Myers 3/5/2015 under terms of GPL v3.
 
 Modified by William Thing 3/10/2015 under terms of GPL v3.
-	* added some more features such as classes of monsters (BabyMonster, etc)		Made some fixes in some lines of code such as in r.game	
+
+* added some more features such as classes of monsters
+* Made some fixes in some lines of code such as in r.game	

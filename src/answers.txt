@@ -1,0 +1,16 @@
+William Thing
+CSE374 HW7
+Part 3 answers
+
+1.	The difference between pure virtual functions get_move and symbol and the virtualfunction score is that pure virtual functions are assigned to 0 and does not need to be defined in cpp file. Pure virtual functions define class as abstract which cannot be instantiated. Virtual functions make classes a polymorphic base class, meaning the derived classes can be overided by these Virtual functions. All derived classes need to implement all inherited pure virtual functions. 
+
+2.	How the get_move() method of Player/Monster/BabyMonster gets called during the game loop is 	that there is while(1) that loops continuously running through the duration of the game, for each iteration of the while loop it is taking in the directional key pressed by the user. The inner loop --> for(int i = 0; i < numchars; i++) moves every Player/Monster/BabyMonster in the game since numchar = player + number of monsters in the game.
+
+3.	The reason that Character::get_move() cannot be a const method is because several classes	such as Monster and BabyMonster inherit the Character, but they have different get_move() that can only happen if Character::get_move() can be overwritten, so it cannot be const.
+	If the character method get_move() was const then every class that inherits that class will move the same so during the duration of the game all players, monsters and babymonsters move exactly the same pattern.
+
+4.	The reason that the destructor for the Character class is defined explicity is because the constructor "new" data is allocated in the class so a destructor is required to free the space.  
+
+5. 	BabyMonster classes does not have to override the character destructor because BabyMonster inherts from Monster class which inherits the destructor from Character. So BabyMonster inherits the same destructor from Monster class.
+
+
